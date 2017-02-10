@@ -69,7 +69,7 @@ def send_email(from_name, from_email, subject, msg):
 
     #from_addr = 'williamsanjay123@gmail.com'
 
-    to_addr = 'williamsanjay12@gmail.com'
+    to_addr = ''
 
     to_name = 'Sanjay Williams'
 
@@ -83,9 +83,9 @@ def send_email(from_name, from_email, subject, msg):
     """
     message_to_send = message.format(from_name, from_email, to_name, to_addr, subject, msg)
 
-    username = 'williamsanjay123@gmail.com'
+    username = ''
 
-    password = 'dljlcgflwzsrofzd'
+    password = ''
 
     server = smtplib.SMTP('smtp.gmail.com',587)
 
