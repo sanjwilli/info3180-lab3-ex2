@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1 class="page-header">Contact Form</h1>
+<p>Fill in this form to contact the site owners.</p>
+
+<form method="POST" action="{{url_for('contact')}}">
+	<label>Name <span>[required]</span></label>
+	<p>please enter your full name</p>
+	<input type="text" name="Name" autocomplete="off">
+
+	<label>E-mail <span>[required]</span></label>
+	<p>please enter your e-mail address</p>
+	<input type="email" name="Email" autocomplete="off">
+
+	<label>Subject <span>[required]</span></label>
+	<p>please enter the subject for your message.</p>
+	<input type="text" name="Subject" autocomplete="off">
+
+	<label>Message <span>[required]</span></label>
+	<p>please enter the message you would to send</p>
+	<textarea name="Message"></textarea>
+
+	<input type="submit" name="send" value="Send">
+</form>
+{% endblock %}

@@ -1,0 +1,47 @@
+/* Contact page style */
+
+@font-face{
+    font-family: "Poiret One";
+    src: url('../../static/fonts/PoiretOne-Regular.ttf') format('truetype');
+}
+
+form label {
+	font-size: 18px;
+	display: block;
+	font-weight: 300;
+}
+form label span {
+	font-size: 13px;
+	color: 	#ff3d3d;
+}
+form p {
+	font-size: 10px;
+	font-family: Poiret One;
+	font-weight: 900;
+}
+form input[type='text'], form input[type='email'], form textarea{
+	margin-bottom: 20px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+form input[type='text'], form input[type='email'] {
+	border: 1px solid #c2c3b5;
+	width: 245px;
+	height: 36px;
+	border-radius: 2px;
+}
+form textarea {
+	width: 325px;
+	height: 94px;
+	border-radius: 2px;
+}
+form input[type='submit']{
+	display: block;
+	width: 70px;
+	height: 30px;
+	background-color: #0f98ab;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	box-shadow: -1px 1px 6px 1px rgba(15,152,171,0.69), 0 0 1px 1px rgba(0,0,0,0.08);
+}
